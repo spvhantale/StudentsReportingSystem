@@ -20,13 +20,7 @@ public class GlobalException {
 			
 		return new ResponseEntity<MyError>(myError,HttpStatus.BAD_REQUEST);
 	}
-	@ExceptionHandler(SemesterException.class)
-	public ResponseEntity<MyError> getSemesterException(SemesterException excep,WebRequest req){
-		
-		MyError myError=new MyError(excep.getMessage(), LocalDateTime.now(), req.getDescription(false));
-			
-		return new ResponseEntity<MyError>(myError,HttpStatus.BAD_REQUEST);
-	}
+	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<MyError> getException(Exception excep,WebRequest req){
 		

@@ -19,6 +19,11 @@ public class Student {
 	@Id
 	private Integer roll;
 	private String name;
-	private List<Semester> semesters=new ArrayList<>(2);
+	private Integer math1;
+	private Integer science1;
+	private Integer english1;
+	private Integer math2;
+	private Integer science2;
+	private Integer english2;
 	
 }
